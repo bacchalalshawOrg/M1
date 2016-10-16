@@ -1,0 +1,106 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_corner_bg"
+    android:orientation="vertical"
+    android:padding="5dp"
+    tools:context=".Customerlist"
+   >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/iv_cust_img"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_width="100dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="#FF0000"
+            android:layout_height="100dp" />
+        <TextView
+            android:id="@+id/tv_customer_name"
+            android:text="chandan gupta"
+            android:layout_toRightOf="@id/iv_cust_img"
+            style="@style/listTextView"/>
+        <TextView
+            android:id="@+id/tv_customer_mob_no"
+            android:layout_below="@id/tv_customer_name"
+            android:text="9748500451"
+            android:layout_toRightOf="@id/iv_cust_img"
+            style="@style/listTextView"/>
+        <TextView
+            android:id="@+id/tv_transport"
+            android:layout_below="@id/tv_customer_mob_no"
+            android:text="Biran Transport"
+            android:layout_toRightOf="@id/iv_cust_img"
+            style="@style/listTextView"/>
+        <TextView
+            android:id="@+id/tv_transport_mob_no"
+            android:layout_below="@id/tv_transport"
+            android:text="9748500451"
+            android:layout_toRightOf="@id/iv_cust_img"
+            style="@style/listTextView"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_alignBottom="@+id/iv_cust_img">
+        <TextView
+            android:id="@+id/btn_mon"
+            android:text="M"
+            style="@style/circularTextView"
+            />
+        <View
+           style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_tue"
+            android:text="T"
+            style="@style/circularTextView"/>
+        <View
+            style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_wed"
+            android:text="W"
+            style="@style/circularTextView"/>
+        <View
+            style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_thr"
+            android:text="T"
+            android:background="@drawable/circle_blue"
+            style="@style/circularTextView"/>
+        <View
+            style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_fri"
+            android:text="F"
+            style="@style/circularTextView"/>
+        <View
+            style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_sat"
+            android:text="S"
+            style="@style/circularTextView"/>
+        <View
+            style="@style/viewDivider" />
+
+        <TextView
+            android:id="@+id/btn_sun"
+            android:text="S"
+            style="@style/circularTextView"/>
+    </LinearLayout>
+</LinearLayout>
